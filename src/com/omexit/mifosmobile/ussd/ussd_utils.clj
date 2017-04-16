@@ -1,10 +1,10 @@
 (ns
   ^{:doc    "USSD Utils - Utility functions that used by the USSD state machine"
-    :author "Nahashon Kibet | mckibet@gmail.com"}
-  com.argent.mifosmobile.ussd.ussd-utils
-  (:require [com.argent.common.config :as config]
-            [com.argent.common.db :as db]
-            [com.argent.mifosmobile.mifos :as mifos]
+    :author "Antony Omeri"}
+  com.omexit.mifosmobile.ussd.ussd-utils
+  (:require [com.omexit.common.config :as config]
+            [com.omexit.common.db :as db]
+            [com.omexit.mifosmobile.mifos :as mifos]
             [digest]
             [clojure.tools.logging :as log]))
 

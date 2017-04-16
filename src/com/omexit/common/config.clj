@@ -1,6 +1,6 @@
 (System/setProperty "mifos.mobile.config" (str (or (System/getenv "DEV_HOME") "C:/Dev") "/Projects/mifos-mobile/test-env/mifos.config"))
 
-(ns com.argent.common.config
+(ns com.omexit.common.config
   (:require [clojure.tools.logging :as log]
             [clojure.data.zip.xml :as zip-xml :only [xml1]]
             [clojure.zip :as zip :only [xml-zip]])

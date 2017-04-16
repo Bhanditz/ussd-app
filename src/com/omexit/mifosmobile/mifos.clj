@@ -1,12 +1,12 @@
 (ns
   ^{:doc "MIFOS Helper functions"}
-  com.argent.mifosmobile.mifos
+  com.omexit.mifosmobile.mifos
   (:require [clj-http.client :as client]
             [clojure.tools.logging :as log]
             [clojure.data.json :as json]
-            [com.argent.common.config :as config]
-            [com.argent.common.macros :as mac]
-            [com.argent.common.date :as date]))
+            [com.omexit.common.config :as config]
+            [com.omexit.common.macros :as mac]
+            [com.omexit.common.date :as date]))
 
 (declare get-loan-product)
 

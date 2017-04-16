@@ -1,10 +1,10 @@
 (ns
   ^{:doc "Session Management Functions"
-    :author "Nahashon Kibet | mckibet@gmail.com"}
-  com.argent.mifosmobile.sessions
-  (:require [com.argent.common.date :as date]
+    :author "Antony Omeri"}
+  com.omexit.mifosmobile.sessions
+  (:require [com.omexit.common.date :as date]
             [clojure.tools.logging :as log]
-            [com.argent.common.config :as config]))
+            [com.omexit.common.config :as config]))
 
 (def session-data (atom {}))
 (def session-timer (atom nil))

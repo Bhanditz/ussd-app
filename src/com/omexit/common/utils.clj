@@ -1,8 +1,8 @@
 ;
 (ns ^{:doc "Utility functions"
-      :author "Nahashon Kibet"}
-  com.argent.common.utils
-  (:require [com.argent.common.config :as config]
+      :author "Antony Omeri"}
+  com.omexit.common.utils
+  (:require [com.omexit.common.config :as config]
             [clojure.java.io :as io]
             [clojure.tools.logging :as log]
             [clojure.data.json :as json]

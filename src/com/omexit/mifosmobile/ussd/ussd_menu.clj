@@ -1,8 +1,8 @@
-(ns com.argent.mifosmobile.ussd.ussd-menu
+(ns com.omexit.mifosmobile.ussd.ussd-menu
   (:require [clojure.tools.logging :as log]
-            [com.argent.common.config :as config]
-            [com.argent.mifosmobile.sessions :as session]
-            [com.argent.mifosmobile.ussd.ussd-utils :as ussd-utils]
+            [com.omexit.common.config :as config]
+            [com.omexit.mifosmobile.sessions :as session]
+            [com.omexit.mifosmobile.ussd.ussd-utils :as ussd-utils]
             [clojure.data.zip.xml :as zip-xml :only [xml1]]
             [clojure.zip :as zip :only [xml-zip]]))
 

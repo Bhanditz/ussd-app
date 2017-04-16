@@ -1,5 +1,5 @@
 ;
-(ns com.argent.common.date
+(ns com.omexit.common.date
   (:require [clj-time.core :as t]
             [clj-time.local :as l]
             [clj-time.format :as f]))

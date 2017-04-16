@@ -1,10 +1,10 @@
 ;;  RabbitMQ Wrapper Lirary
 ;;  It uses Langohr, a Clojure client for RabbitMQ
 ;;
-;;  @author  Nahashon Kibet
+;;  @author  Antony Omeri
 ;;
 
-(ns com.argent.lib.rabbitmq
+(ns com.omexit.lib.rabbitmq
     (:require [langohr.core      :as rmq]
               [langohr.channel   :as lch]
               [langohr.queue     :as lq]

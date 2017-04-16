@@ -1,8 +1,8 @@
-(ns com.argent.mifosmobile.sms
-  (:require [com.argent.common.config :as config]
-            [com.argent.lib.rabbitmq :as rmq]
+(ns com.omexit.mifosmobile.sms
+  (:require [com.omexit.common.config :as config]
+            [com.omexit.lib.rabbitmq :as rmq]
             [clojure.tools.logging :as log]
-            [com.argent.common.utils :as utils]))
+            [com.omexit.common.utils :as utils]))
 
 (def send-sms (fn [& args] nil))
 

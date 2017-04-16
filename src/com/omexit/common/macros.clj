@@ -1,6 +1,6 @@
 ;
 
-(ns com.argent.common.macros
+(ns com.omexit.common.macros
   (:require [clojure.tools.logging :as log]))
 
 (defmacro with-timed-try

@@ -1,12 +1,12 @@
-;   Copyright (c) Nahashon Kibet. All rights reserved.
+;   Copyright (c) Antony Omeri. All rights reserved.
 
 ;;;; -----------------------------------------------------------------------
 ;;;; Database Wrapper
 ;;;; -----------------------------------------------------------------------
-(ns com.argent.common.db
+(ns com.omexit.common.db
   (:require [clojure.java.jdbc :as jdbc]
             [clojure.tools.logging :as log]
-            [com.argent.common.config :as config]
+            [com.omexit.common.config :as config]
             [clojure.data.json])
   (:import [com.mchange.v2.c3p0 ComboPooledDataSource]))
 

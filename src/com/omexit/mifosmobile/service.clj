@@ -1,21 +1,21 @@
 ;
-(ns com.argent.mifosmobile.service
+(ns com.omexit.mifosmobile.service
   ^{:doc    "MIFOS Mobile - A service that provides access to MIFOS via a mobile channel (USSD, App etc)"
-    :author "Nahashon Kibet | mckibet@gmail.com"}
+    :author "Antony Omeri"}
   (:gen-class)
   (:require [clojure.tools.logging :as log]
             [compojure.route :as route]
             [compojure.core :refer :all]
-            [com.argent.common
+            [com.omexit.common
              [config :as config]
              [db :as db]
              [utils :as utils]]
-            [com.argent.mifosmobile
+            [com.omexit.mifosmobile
              [sessions :as session]
              [mifos :as mifos]]
-            [com.argent.mifosmobile.ussd.ussd-menu :as menu]
-            [com.argent.mifosmobile.ussd.ussd-utils :as ussd-utils]
-            [com.argent.mifosmobile.sms :as sms]))
+            [com.omexit.mifosmobile.ussd.ussd-menu :as menu]
+            [com.omexit.mifosmobile.ussd.ussd-utils :as ussd-utils]
+            [com.omexit.mifosmobile.sms :as sms]))
 
 ; --------------------------------------------------------------------------------------------------------
 ;   Gateway adapter functions
@@ -204,7 +204,7 @@
 
         (when final-state?
           (session/end-session session-id subscriber))
-        {:text (com.argent.common.utils/get-message state-text @+session-data+)
+        {:text (com.omexit.common.utils/get-message state-text @+session-data+)
          :end? (if final-state? true false)}))
     (catch Exception ex
       (log/errorf ex "handleUSSDRequest(args=[%s %s %s %s]) -> %s" session-id subscriber input new? (.getMessage ex))
